@@ -1,0 +1,35 @@
+
+        <h1>CREATE USER AND AUTHENTICATE THEM</h1>
+          <form action="/" method="POST">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="username">
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+
+            <form action="/authenticate" method="POST">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="username">
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Authenticate</button>
+          </form>
+
+          <hr>
+          <h1>GENERATE IMAGE THUMBNAIL</h1>
+          <form action="/thumbnail" method="POST">
+            <div>
+              <label for="text">Email</label>
+              <input type="text" name="url" width="100" placeholder="Enter Image URL">
+            </div>
+            <button type="submit" class="btn btn-dark">Generate</button>
+          </form>
